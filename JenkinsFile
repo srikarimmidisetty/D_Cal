@@ -9,7 +9,7 @@ pipeline {
                 git changelog: false, poll: false, url: 'https://github.com/srikarimmidisetty/D_Cal.git'
                 // Run Maven on a Unix agent.
                 
-                sh "cd Calci && mvn clean package"
+                sh "cd Calci && mvn build"
             }
         }
     }
